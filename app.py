@@ -4,8 +4,6 @@ from html import escape
 # Title of the app
 st.title('Mini SEO Meta Tag Generator')
 
-
-
 st.write("Fill in the details below and click 'Generate Meta Tags' to create your SEO meta tags.")
 
 # Input fields with examples
@@ -63,6 +61,7 @@ if st.button('Generate Meta Tags'):
         <body>
             <h1>{website_name_escaped}</h1>
             <p>{website_description_escaped}</p>
+            <img src="{image_link_escaped}" alt="Sample Image" style="max-width: 100%;">
         </body>
         </html>"""
 
@@ -72,4 +71,10 @@ if st.button('Generate Meta Tags'):
             file_name="meta_tags.html",
             mime="text/html"
         )
+
+        # Display preview of the HTML
+        st.markdown("### See in action")
+        st.markdown(f"""
+        <iframe srcdoc="{html_content}" class="preview-frame" width="100%" height="400px"></iframe>
+        """, unsafe_allow_html=True)
 
