@@ -1,6 +1,6 @@
 # Mini SEO Meta Tag Generator
 
-This is a simple SEO meta tag generator created using Streamlit, a Python library for building web applications.
+This is a SEO meta tag generator created using Streamlit, a Python library for building web applications.
 
 ### Description
 The Mini SEO Meta Tag Generator allows users to input their website details such as name, description, link, Twitter username, and image link. It then generates the appropriate meta tags for SEO purposes, including Open Graph and Twitter tags.
