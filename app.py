@@ -72,9 +72,3 @@ if st.button('Generate Meta Tags'):
             mime="text/html"
         )
 
-        # Display preview of the HTML
-        st.markdown("### See in action")
-        st.markdown(f"""
-        <iframe srcdoc="{html_content}" class="preview-frame" width="100%" height="400px"></iframe>
-        """, unsafe_allow_html=True)
-
